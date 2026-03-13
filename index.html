@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadeh Studio | Software Engineering & Urban Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/Capture.JPG" alt="Sadeh Studio">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Where Technology Meets Design</h1>
+            <p class="hero-subtitle">Sadeh Studio brings together expertise in software engineering and urban design to deliver innovative solutions across disciplines.</p>
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="section-intro">Sadeh Studio is a unique consultancy founded by two professionals passionate about their crafts.</p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/WhatsApp Image 2026-03-11 at 15.32.23.jpeg" alt="Dor">
+                    </div>
+                    <h3>Dor</h3>
+                    <p class="member-role">Software Engineer, Co-Founder</p>
+                    <p>Specializing in real-time systems and embedded software development. Bringing years of experience in building reliable, high-performance solutions.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/Tal-headshot.png" alt="Tal">
+                    </div>
+                    <h3>Tal</h3>
+                    <p class="member-role">Urban Designer, Co-Founder</p>
+                    <p>Expert in architecture and urban planning. Creating spaces that are functional, sustainable, and human-centered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-intro">We offer consulting and freelance services across two distinct but complementary domains.</p>
+
+            <div class="services-grid">
+                <div class="service-category">
+                    <h3>Software Engineering</h3>
+                    <ul class="service-list">
+                        <li>Real-Time Systems Development</li>
+                        <li>Embedded Software Solutions</li>
+                        <li>System Architecture Design</li>
+                        <li>Technical Consulting</li>
+                        <li>Code Review & Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-category">
+                    <h3>Urban Design & Architecture</h3>
+                    <ul class="service-list">
+                        <li>Urban Planning Consultation</li>
+                        <li>Architectural Design</li>
+                        <li>Space Planning</li>
+                        <li>Feasibility Studies</li>
+                        <li>Design Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="section-intro">Have a project in mind? We'd love to hear from you.</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:tal.s.arch@gmail.com">tal.s.arch@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Alicante, Spain</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="software">Software Engineering Inquiry</option>
+                            <option value="urban">Urban Design Inquiry</option>
+                            <option value="both">Both / General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sadeh Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
