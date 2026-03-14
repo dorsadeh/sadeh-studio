@@ -234,6 +234,7 @@ section {
 }
 
 .member-photo {
+    display: block;
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -263,6 +264,14 @@ section {
     color: var(--color-accent);
     font-weight: 500;
     margin-bottom: 1rem;
+}
+
+.team-member h3 a {
+    color: inherit;
+}
+
+.team-member h3 a:hover {
+    color: var(--color-accent);
 }
 
 /* Services Section */
