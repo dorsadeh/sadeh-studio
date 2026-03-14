@@ -497,7 +497,7 @@ section {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         width: 70%;
         height: 100vh;
         background-color: var(--color-primary);
@@ -505,11 +505,13 @@ section {
         justify-content: center;
         align-items: center;
         gap: 30px;
-        transition: right 0.3s ease;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+        transform: translateX(100%);
     }
 
     .nav-links.active {
-        right: 0;
+        transform: translateX(0);
     }
 
     .nav-links a {
@@ -519,7 +521,15 @@ section {
 
     .mobile-menu-btn {
         display: flex;
-        z-index: 1001;
+        position: fixed;
+        top: 24px;
+        right: 24px;
+        z-index: 1002;
+    }
+
+    .mobile-menu-btn.active span,
+    .navbar.scrolled .mobile-menu-btn.active span {
+        background-color: var(--color-white);
     }
 
     .mobile-menu-btn.active span:nth-child(1) {
