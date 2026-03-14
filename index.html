@@ -153,10 +153,6 @@
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
 
-        // Move nav-links and menu button to body so they're not constrained by the navbar's stacking context
-        document.body.appendChild(navLinks);
-        document.body.appendChild(mobileMenuBtn);
-
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             mobileMenuBtn.classList.toggle('active');
