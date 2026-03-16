@@ -121,7 +121,7 @@ img {
 }
 
 .logo img {
-    height: 70px;
+    height: 77px;
     width: auto;
     filter: invert(1) brightness(2);
     mix-blend-mode: screen;
@@ -198,9 +198,12 @@ img {
 
 .hero-subtitle {
     font-size: 1.25rem;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto 2rem;
-    opacity: 0.9;
+    background: rgba(49, 130, 206, 0.7);
+    padding: 20px 30px;
+    border-radius: 8px;
+    line-height: 1.7;
 }
 
 /* Section Styles */
@@ -249,13 +252,13 @@ section {
 }
 
 .photo-dor img {
-    transform: scale(1.05);
-    object-position: center 20%;
+    transform: scale(1.15);
+    object-position: center 40%;
 }
 
 .photo-tal img {
-    transform: scale(1.65);
-    object-position: center 22%;
+    transform: scale(1.4);
+    object-position: center 8%;
 }
 
 .placeholder-photo {
