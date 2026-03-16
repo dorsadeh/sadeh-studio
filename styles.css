@@ -248,6 +248,16 @@ section {
     object-fit: cover;
 }
 
+.photo-dor img {
+    transform: scale(1.05);
+    object-position: center 20%;
+}
+
+.photo-tal img {
+    transform: scale(1.65);
+    object-position: center 22%;
+}
+
 .placeholder-photo {
     background: linear-gradient(135deg, var(--color-light) 0%, #e2e8f0 100%);
     display: flex;
