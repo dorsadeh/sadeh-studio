@@ -3,118 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadeh Studio | Software Engineering & Urban Design</title>
+    <title>Sadeh Studio | Architecture, Planning & Technology</title>
+    <meta name="description" content="Sadeh Studio is an independent consultancy working at the intersection of architecture and software engineering.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="images/Capture.JPG" alt="Sadeh Studio">
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="wordmark">
+                <span class="wm-italic">Sadeh</span><span class="wm-roman"> Studio</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about"><span class="link-num">01</span><span class="link-label">About</span></a></li>
+                <li><a href="#services"><span class="link-num">02</span><span class="link-label">Services</span></a></li>
+                <li><a href="#contact"><span class="link-num">03</span><span class="link-label">Contact</span></a></li>
             </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <header class="hero">
-        <div class="container">
-            <h1>Where Technology Meets Design</h1>
-            <p class="hero-subtitle">Sadeh Studio brings together expertise in software engineering and urban design to deliver innovative solutions across disciplines.</p>
-            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="hero-top">
+            <span class="meta-tag">— Independent Consultancy</span>
+            <span class="meta-tag">Est. Alicante / ES</span>
+        </div>
+
+        <div class="hero-inner">
+            <h1 class="hero-title">
+                <span class="line line-1">Where <em>Technology</em></span>
+                <span class="line line-2">Meets <em>Design</em>.</span>
+            </h1>
+
+            <div class="hero-foot">
+                <p class="hero-subtitle">
+                    Sadeh Studio brings together expertise in software engineering and urban design to deliver innovative solutions across disciplines.
+                </p>
+                <a href="#contact" class="btn btn-light">
+                    <span class="btn-label">Get in Touch</span>
+                    <span class="btn-arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+            <span class="scroll-label">Scroll</span>
+            <span class="scroll-line"></span>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About -->
+    <section id="about" class="section section-about">
         <div class="container">
-            <h2>About Us</h2>
-            <p class="section-intro">Sadeh Studio is a unique consultancy founded by two professionals passionate about their crafts.</p>
+            <div class="section-marker reveal">
+                <span class="num">01</span>
+                <span class="rule"></span>
+                <span class="label">About the Practice</span>
+            </div>
 
-            <div class="team-grid">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/dor-sadeh/" target="_blank" class="member-photo photo-dor">
-                        <img src="images/Dor-headshot.png" alt="Dor">
-                    </a>
-                    <h3><a href="https://www.linkedin.com/in/dor-sadeh/" target="_blank">Dor</a></h3>
-                    <p class="member-role">Software Engineer, Co-Founder</p>
-                    <p>Specializing in real-time systems and embedded software development. Bringing years of experience in building reliable, high-performance solutions.</p>
-                </div>
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/tal-sadeh-209592243/" target="_blank" class="member-photo photo-tal">
-                        <img src="images/Tal-headshot.png" alt="Tal">
-                    </a>
-                    <h3><a href="https://www.linkedin.com/in/tal-sadeh-209592243/" target="_blank">Tal</a></h3>
-                    <p class="member-role">Urban Designer, Co-Founder</p>
-                    <p>Expert in architecture and urban planning. Creating spaces that are functional, sustainable, and human-centered.</p>
+            <div class="about-grid">
+                <h2 class="about-statement reveal">
+                    An independent consultancy at the <em>intersection</em> of two disciplines.
+                </h2>
+
+                <div class="about-body reveal">
+                    <p>
+                        Sadeh Studio works across architecture and software engineering, bringing together professional knowledge of the built environment with the technical capacity to build intelligent, data-driven tools around it.
+                    </p>
+                    <p>
+                        Our practice spans both fields, applying each where it adds the most value to a project.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Services -->
+    <section id="services" class="section section-services">
         <div class="container">
-            <h2>Our Services</h2>
-            <p class="section-intro">We offer consulting and freelance services across two distinct but complementary domains.</p>
+            <div class="section-marker reveal">
+                <span class="num">02</span>
+                <span class="rule"></span>
+                <span class="label">Services</span>
+            </div>
 
-            <div class="services-grid">
-                <div class="service-category">
-                    <h3>Software Engineering</h3>
-                    <ul class="service-list">
-                        <li>Real-Time Systems Development</li>
-                        <li>Embedded Software Solutions</li>
-                        <li>System Architecture Design</li>
-                        <li>Technical Consulting</li>
-                        <li>Code Review & Optimization</li>
+            <h2 class="services-statement reveal">
+                Architectural and planning data is abundant — yet unlike most other data, it is graphic, layered, and meaningful only when interpreted by trained <em>professionals</em>. Drawings, regulations, and spatial documents resist automation precisely because they demand reading, not just processing.
+            </h2>
+
+            <p class="services-bridge reveal">
+                Sadeh Studio bridges this gap, combining technological capability with high-level professional knowledge to decipher complex spatial situations and turn them into structured, accessible information. We offer consulting services across two complementary tracks — professional architectural expertise, and software and AI systems development.
+            </p>
+
+            <div class="tracks">
+                <article class="track reveal">
+                    <header class="track-head">
+                        <span class="track-num">Track 01</span>
+                        <h3 class="track-title">Architecture <em>&amp;</em> Planning</h3>
+                    </header>
+                    <ul class="track-list">
+                        <li><span class="dash"></span><span>Urban planning knowledge and statutory interpretation</span></li>
+                        <li><span class="dash"></span><span>Architectural assessment and professional consultation</span></li>
+                        <li><span class="dash"></span><span>Domain expertise for AI training and model validation</span></li>
+                        <li><span class="dash"></span><span>Academic research and feasibility analysis</span></li>
                     </ul>
-                </div>
-                <div class="service-category">
-                    <h3>Urban Design, Architecture & Research</h3>
-                    <ul class="service-list">
-                        <li>Urban Planning and Design</li>
-                        <li>Statutoric Consultation</li>
-                        <li>Project Management</li>
-                        <li>Academic Research</li>
-                        <li>Feasibility Studies</li>
+                </article>
+
+                <article class="track reveal">
+                    <header class="track-head">
+                        <span class="track-num">Track 02</span>
+                        <h3 class="track-title">Software <em>Engineering</em></h3>
+                    </header>
+                    <ul class="track-list">
+                        <li><span class="dash"></span><span>Software architecture and system design</span></li>
+                        <li><span class="dash"></span><span>Database design and management</span></li>
+                        <li><span class="dash"></span><span>AI integration and development</span></li>
+                        <li><span class="dash"></span><span>Data processing and analysis</span></li>
                     </ul>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p class="section-intro">Have a project in mind? We'd love to hear from you.</p>
+            <div class="section-marker reveal">
+                <span class="num">03</span>
+                <span class="rule"></span>
+                <span class="label">Contact</span>
+            </div>
 
-            <div class="contact-content">
-                <div class="contact-info">
+            <h2 class="contact-intro reveal">
+                Working on a project that sits at the intersection of planning knowledge and <em>technology</em>? We'd like to hear from you.
+            </h2>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
                     <div class="contact-item">
-                        <h3>Email</h3>
-                        <p><a href="mailto:tal.s.arch@gmail.com">tal.s.arch@gmail.com</a></p>
+                        <span class="ci-label">Email</span>
+                        <a href="mailto:estudio.sadeh@gmail.com" class="ci-value">estudio.sadeh@gmail.com</a>
                     </div>
                     <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>Alicante, Spain</p>
+                        <span class="ci-label">Phone</span>
+                        <a href="tel:+34685263785" class="ci-value">+34 685 263 785</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="ci-label">Location</span>
+                        <span class="ci-value">Alicante, Spain</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="ci-label">Hours</span>
+                        <span class="ci-value">Mon — Fri / 09:00 — 18:00 CET</span>
                     </div>
                 </div>
 
-                <form class="contact-form" action="https://formsubmit.co/c41da7f3cd5323a07f85cdcd9db1ff70" method="POST">
+                <!-- NOTE: FormSubmit hash is for tal.s.arch@gmail.com — re-register at formsubmit.co with estudio.sadeh@gmail.com to get a new hash, then replace the action URL below. -->
+                <form class="contact-form reveal" action="https://formsubmit.co/c41da7f3cd5323a07f85cdcd9db1ff70" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -124,18 +182,13 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject">
-                            <option value="software">Software Engineering Inquiry</option>
-                            <option value="urban">Urban Design Inquiry</option>
-                            <option value="both">Both / General Inquiry</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-dark">
+                        <span class="btn-label">Send Message</span>
+                        <span class="btn-arrow" aria-hidden="true">→</span>
+                    </button>
                 </form>
             </div>
         </div>
@@ -144,44 +197,63 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Sadeh Studio. All rights reserved.</p>
+            <div class="footer-row">
+                <a href="#" class="wordmark wordmark-light">
+                    <span class="wm-italic">Sadeh</span><span class="wm-roman"> Studio</span>
+                </a>
+                <span class="meta-tag light">Architecture · Planning · Technology</span>
+            </div>
+            <div class="footer-row footer-row-bottom">
+                <span class="footer-meta">© 2025 — All rights reserved</span>
+                <span class="footer-meta">Alicante / España</span>
+                <span class="footer-meta">estudio.sadeh@gmail.com</span>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
+        // Navbar background on scroll
+        const navbar = document.getElementById('navbar');
+        const updateNav = () => {
+            if (window.scrollY > 60) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        };
+        window.addEventListener('scroll', updateNav, { passive: true });
+        updateNav();
 
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileMenuBtn.classList.toggle('active');
-            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        // Mobile menu
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        menuBtn.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            menuBtn.classList.toggle('open', open);
+            document.body.style.overflow = open ? 'hidden' : '';
         });
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        // Smooth scroll + close menu
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (!target) return;
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                    navLinks.classList.remove('active');
-                    mobileMenuBtn.classList.remove('active');
-                    document.body.style.overflow = '';
-                }
+                target.scrollIntoView({ behavior: 'smooth' });
+                navLinks.classList.remove('open');
+                menuBtn.classList.remove('open');
+                document.body.style.overflow = '';
             });
         });
 
-        // Navbar background on scroll
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+        // Reveal on scroll
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '0px 0px -80px 0px', threshold: 0.05 });
+
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
     </script>
 </body>
 </html>
