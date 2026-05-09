@@ -303,7 +303,7 @@ img { max-width: 100%; display: block; }
 
 .hero-title .line {
     display: block;
-    overflow: hidden;
+    padding-bottom: 0.08em;
 }
 
 .hero-title .line span,
